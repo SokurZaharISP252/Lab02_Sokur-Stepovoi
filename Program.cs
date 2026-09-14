@@ -85,28 +85,35 @@
 // Console.WriteLine($"Удалось преобразовать: {wasSuccessful}");
 // Console.WriteLine($"Значение переменной booksCount: {booksCount}");
 
-Console.Write("Введите имя и фамилию: ");
-string fio = Console.ReadLine();
-Console.Write("Введите группу: ");
-string group = Console.ReadLine();
-Console.Write("Введите год рождения: ");
-string birthInput = Console.ReadLine();
-Console.Write("Введите средний балл: ");
-string gradeInput = Console.ReadLine();
-Console.Write("Введите любимую букву: ");
-char favorite = Console.ReadLine()[0];
+// Console.Write("Введите имя и фамилию: ");
+// string fio = Console.ReadLine();
+// Console.Write("Введите группу: ");
+// string group = Console.ReadLine();
+// Console.Write("Введите год рождения: ");
+// string birthInput = Console.ReadLine();
+// Console.Write("Введите средний балл: ");
+// string gradeInput = Console.ReadLine();
+// Console.Write("Введите любимую букву: ");
+// char favorite = Console.ReadLine()[0];
 
-int birthParse = int.Parse(birthInput);
-double gradeParse = double.Parse(gradeInput);
-bool is4 = false;
-if (gradeParse >= 4.0)
-{
-    is4 = true;
-}
+// int birthParse = int.Parse(birthInput);
+// double gradeParse = double.Parse(gradeInput);
+// bool is4 = false;
+// if (gradeParse >= 4.0)
+// {
+//     is4 = true;
+// }
 
-System.Console.WriteLine($"     Анкета");
-System.Console.WriteLine($"{fio}, группа {group}");
-System.Console.WriteLine($"Год рождения: {birthParse} (в 2030 будет {2030 - birthParse} год)");
-System.Console.WriteLine($"Средний балл: {gradeInput}");
-System.Console.WriteLine($"Балл >= 4.0: {is4}");
-System.Console.WriteLine($"Любимая буква: {favorite}");
+// System.Console.WriteLine($"     Анкета");
+// System.Console.WriteLine($"{fio}, группа {group}");
+// System.Console.WriteLine($"Год рождения: {birthParse} (в 2030 будет {2030 - birthParse} год)");
+// System.Console.WriteLine($"Средний балл: {gradeInput}");
+// System.Console.WriteLine($"Балл >= 4.0: {is4}");
+// System.Console.WriteLine($"Любимая буква: {favorite}");
+
+System.Console.Write("Введите рост в метрах: ");
+double height = double.Parse(System.Console.ReadLine());
+System.Console.Write("Введите вес в килограммах: ");
+double weight = double.Parse(Console.ReadLine());
+double bmi = weight * (height * height);
+System.Console.WriteLine($"ИМТ: {bmi:F2}");
