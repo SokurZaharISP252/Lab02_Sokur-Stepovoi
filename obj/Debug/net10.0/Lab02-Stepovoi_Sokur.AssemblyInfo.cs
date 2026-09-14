@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab02-Stepovoi_Sokur")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42b141c27dec424b29d346955c14d7ed51b1552f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f31f209a95bb029ad606e63c868c2e03938e39b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab02-Stepovoi_Sokur")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab02-Stepovoi_Sokur")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

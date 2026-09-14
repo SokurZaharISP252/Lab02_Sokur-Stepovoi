@@ -118,9 +118,19 @@
 // double bmi = weight * (height * height);
 // System.Console.WriteLine($"ИМТ: {bmi:F2}");
 
-System.Console.Write("Введите фамилию: ");
-string surname = Console.ReadLine();
-System.Console.Write("Введите имя: ");
-string name = Console.ReadLine();
-char fname = name[0];
-System.Console.WriteLine($"{surname} {fname}.");
+// System.Console.Write("Введите фамилию: ");
+// string surname = Console.ReadLine();
+// System.Console.Write("Введите имя: ");
+// string name = Console.ReadLine();
+// char fname = name[0];
+// System.Console.WriteLine($"{surname} {fname}.");
+
+System.Console.Write("Введите целое число: ");
+bool isSuccess1 = int.TryParse(Console.ReadLine(), out int first);
+System.Console.Write("Введите дробное число: ");
+bool isSuccess2 = double.TryParse(Console.ReadLine(), out double second);
+System.Console.Write("Введите дату (дд.мм.гггг): ");
+bool isSuccess3 = DateTime.TryParse(Console.ReadLine(), out DateTime third);
+System.Console.WriteLine($"int: успешно? - {isSuccess1}; значение - {first}");
+System.Console.WriteLine($"double: успешно? - {isSuccess2}; значение - {second}");
+System.Console.WriteLine($"datetime: успешно? - {isSuccess3}; значение - {third}");
