@@ -111,9 +111,16 @@
 // System.Console.WriteLine($"Балл >= 4.0: {is4}");
 // System.Console.WriteLine($"Любимая буква: {favorite}");
 
-System.Console.Write("Введите рост в метрах: ");
-double height = double.Parse(System.Console.ReadLine());
-System.Console.Write("Введите вес в килограммах: ");
-double weight = double.Parse(Console.ReadLine());
-double bmi = weight * (height * height);
-System.Console.WriteLine($"ИМТ: {bmi:F2}");
+// System.Console.Write("Введите рост в метрах: ");
+// double height = double.Parse(System.Console.ReadLine());
+// System.Console.Write("Введите вес в килограммах: ");
+// double weight = double.Parse(Console.ReadLine());
+// double bmi = weight * (height * height);
+// System.Console.WriteLine($"ИМТ: {bmi:F2}");
+
+System.Console.Write("Введите фамилию: ");
+string surname = Console.ReadLine();
+System.Console.Write("Введите имя: ");
+string name = Console.ReadLine();
+char fname = name[0];
+System.Console.WriteLine($"{surname} {fname}.");
